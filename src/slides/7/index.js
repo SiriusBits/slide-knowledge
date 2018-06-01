@@ -33,7 +33,7 @@ export default (
         </Text>
         <Text textAlign="left" margin="0 20px 0 0" textColor="tertiary" size={3} bold>
           <Markdown>
-            `jQuery` became pracically a standard on its own and lowered the barrier to entry for countless aspring
+            `jQuery` became practically a standard on its own and lowered the barrier to entry for countless aspiring
             front end devs.
           </Markdown>
         </Text>
