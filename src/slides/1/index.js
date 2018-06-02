@@ -23,7 +23,7 @@ export default (
     </Text>
     <Text margin="10px 0 0" textColor="tertiary" textSize="2rem">
       Ben Bykowski <small>- @Sirius_B</small> &nbsp; &nbsp; &nbsp; {TheDate.RightNow}
-      May 4th, 2018
+      June 2nd, 2018
     </Text>
     <Text margin="10px 0 0" textColor="#6fc04a" textSize="3rem">
       Hyland Software - Westlake, Ohio
