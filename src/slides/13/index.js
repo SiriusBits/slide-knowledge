@@ -22,7 +22,7 @@ export default (
         Thank you to the teams behind `VS Code`, `Node.js`, `React.js` and `Yarn`, `HyperApp`, the `CSS Grid Spec`,
         `Parcel.js`.
       </Markdown>
-      <Markdown>Thanks to the organizers and volunteers at *StirTrek*.</Markdown>
+      <Markdown>Thanks to the organizers and volunteers at *PGHTechFest*.</Markdown>
       <Markdown>
         Special thanks to Wes Bos, Scott Tolinski and Una Kravets for inspiration, tutorials and references. Thank you
         to my co-workers and friends for their support.
@@ -39,16 +39,16 @@ export default (
       <Fill>
         <Appear>
           <List>
-            <ListItem>Wes Bos & CSSGrid.io</ListItem>
-            <ListItem>Scott Tolinski & LevelUp Tuts</ListItem>
+            <ListItem>Wes Bos & CSSGrid.io                        </ListItem>
+            <ListItem>Scott Tolinski & LevelUp Tuts                        </ListItem>
           </List>
         </Appear>
       </Fill>
       <Fill>
         <Appear>
           <List>
-            <ListItem>https://hyperstart.io/</ListItem>
-            <ListItem>VS Code, Prettier, NPX</ListItem>
+            <ListItem>https://hyperstart.io/                        </ListItem>
+            <ListItem>VS Code, Prettier, NPX                        </ListItem>
           </List>
         </Appear>
       </Fill>
