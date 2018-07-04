@@ -5,22 +5,12 @@ import React from 'react';
 import { BlockQuote, Cite, Deck, Heading, ListItem, List, Quote, Slide, Text } from 'spectacle';
 
 // Import theme
-import createTheme from 'spectacle-theme-nova';
+import createTheme from './spectacle-theme-nova/lib/index';
 
 // Require CSS
 require('normalize.css');
 
 const theme = createTheme('nova');
-/* {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quartenary: '#CECECE',
-  }, */
-/* {
-    primary: 'Montserrat',
-    secondary: 'Helvetica',
-  } */
 
 const slidesImports = [
   import('./slides/1'),

@@ -8,17 +8,17 @@ import nova from 'nova-colors';
  */
 const COLOR_THEME = {
   nova: {
-    text: nova.grays.gray6, /** usually gray5, want more contrast :-x */
+    text: nova.grays.gray6 /** usually gray5, want more contrast :-x */,
     heading: nova.colors.cyan,
     highlight: nova.colors.yellow,
-    background: nova.grays.gray1
+    background: nova.grays.gray1,
   },
   avon: {
     text: nova.colors.black,
     heading: nova.colors.blue,
     highlight: nova.colors.cyan,
-    background: nova.grays.gray6
-  }
+    background: nova.grays.gray6,
+  },
 };
 
 /**
@@ -30,22 +30,27 @@ const COLOR_THEME = {
  * Also, users can overwrite anything with custom styles by passing
  * an object as second argument.
  */
-const screen = (name, custom={}) => {
-  const color = COLOR_THEME[name] || COLOR_THEME['nova'];
+const screen = (name, custom = {}) => {
+  const color = COLOR_THEME[name] || COLOR_THEME.nova;
   const fonts = {
     body: `'Open Sans', sans-serif`,
     header: `Montserrat, sans-serif`,
-    code: `'Fira Mono', monospace`
+    code: `'Fira Mono', monospace`,
   };
 
   // Base Style for all Headers
-  const header = style => Object.assign({}, {
-    fontFamily: fonts.header,
-    fontWeight: 700,
-    color: color.heading,
-    lineHeight: 1,
-    margin: '0 auto 2rem'
-  }, style);
+  const header = style =>
+    Object.assign(
+      {},
+      {
+        fontFamily: fonts.header,
+        fontWeight: 700,
+        color: color.heading,
+        lineHeight: 1,
+        margin: '0 auto 2rem',
+      },
+      style
+    );
 
   const theme = {
     colors: Object.assign({}, color, nova.colors, nova.grays),
@@ -59,14 +64,14 @@ const screen = (name, custom={}) => {
         color: color.text,
         fontFamily: fonts.body,
         fontSize: '100%',
-        overflow: 'hidden'
+        overflow: 'hidden',
       },
       'html, body': {
-        height: '100%'
+        height: '100%',
       },
       '*': {
-        boxSizing: 'border-box'
-      }
+        boxSizing: 'border-box',
+      },
     },
 
     // Presentation Components
@@ -84,40 +89,40 @@ const screen = (name, custom={}) => {
         display: 'block',
         fontSize: '4rem',
         fontWeight: 'bold',
-        lineHeight: 1.1
+        lineHeight: 1.1,
       },
       cite: {
         display: 'block',
         marginTop: '2.5rem',
         fontSize: '1.5rem',
-        opacity: 0.6
+        opacity: 0.6,
       },
       content: {
         margin: '0 auto',
-        textAlign: 'center'
+        textAlign: 'center',
       },
       heading: {
         h1: header({
-          fontSize: '7rem'
+          fontSize: '7rem',
         }),
         h2: header({
-          fontSize: '5rem'
+          fontSize: '5rem',
         }),
         h3: header({
           fontSize: '3rem',
-          color: color.text
+          color: color.text,
         }),
         h4: header({
           fontSize: '2rem',
-          color: color.text
+          color: color.text,
         }),
         link: {
-          textDecoration: 'none'
-        }
+          textDecoration: 'none',
+        },
       },
       text: {
         fontSize: '1.75rem',
-        margin: '0 auto 0.5rem'
+        margin: '0 auto 0.5rem',
       },
       s: {
         strikethrough: {},
@@ -129,35 +134,35 @@ const screen = (name, custom={}) => {
         marginBottom: '-2px',
         borderBottom: `2px solid rgba(${hexRgb(color.heading)}, 0.3)`,
         ':hover': {
-          color: color.heading
-        }
+          color: color.heading,
+        },
       },
       listItem: {
         fontSize: '2rem',
-        padding: '0.25em 0'
+        padding: '0.25em 0',
       },
       list: {
         textAlign: 'left',
-        padding: '0 0 0 3rem'
+        padding: '0 0 0 3rem',
       },
       tableHeaderItem: {
         fontSize: '2.25rem',
         fontWeight: 'bold',
         border: `2px solid ${nova.grays.gray2}`,
-        padding: '0.5rem 0'
+        padding: '0.5rem 0',
       },
       tableItem: {
         fontSize: '1.5rem',
         border: `2px solid ${nova.grays.gray2}`,
-        padding: '1rem 0.5rem'
+        padding: '1rem 0.5rem',
       },
       table: {
         width: '100%',
-        borderCollapse: 'collapse'
+        borderCollapse: 'collapse',
       },
       image: {
         display: 'block',
-        margin: '0.5rem auto'
+        margin: '0.5rem auto',
       },
       code: {
         display: 'inline-block',
@@ -167,23 +172,23 @@ const screen = (name, custom={}) => {
         lineHeight: 1,
         background: nova.grays.gray2,
         padding: '6px 5px 3px',
-        borderRadius: '2px'
+        borderRadius: '2px',
       },
       codePane: {
         pre: {},
-        code: {}
-      }
+        code: {},
+      },
     },
 
     // Controls (-> none)
     // ---------------
     controls: {
       prev: {
-        display: 'none'
+        display: 'none',
       },
       next: {
-        display: 'none'
-      }
+        display: 'none',
+      },
     },
 
     // Progress
@@ -195,14 +200,14 @@ const screen = (name, custom={}) => {
           bottom: '5px',
           left: '50%',
           transition: 'all 1s ease-in-out 0.2s',
-          zIndex: 1000
+          zIndex: 1000,
         },
         pacman: {
           position: 'absolute',
           transition: 'left 0.3s ease-in-out 0.2s',
           width: '20px',
           height: '20px',
-          transform: 'translate(-5px, -5px)'
+          transform: 'translate(-5px, -5px)',
         },
         pacmanTop: {
           position: 'absolute',
@@ -211,7 +216,7 @@ const screen = (name, custom={}) => {
           height: '10px',
           borderTopLeftRadius: '10px',
           borderTopRightRadius: '10px',
-          background: color.highlight
+          background: color.highlight,
         },
         pacmanBottom: {
           position: 'absolute',
@@ -221,7 +226,7 @@ const screen = (name, custom={}) => {
           borderBottomLeftRadius: '10px',
           borderBottomRightRadius: '10px',
           background: color.highlight,
-          top: '10px'
+          top: '10px',
         },
         point: {
           position: 'absolute',
@@ -233,8 +238,8 @@ const screen = (name, custom={}) => {
           borderStyle: 'solid',
           borderColor: color.heading,
           borderRadius: '50%',
-          transition: 'all 0.01s ease-out 0.4s'
-        }
+          transition: 'all 0.01s ease-out 0.4s',
+        },
       },
       bar: {
         container: {
@@ -244,13 +249,13 @@ const screen = (name, custom={}) => {
           bottom: 0,
           left: 0,
           transition: 'all .8s ease-in-out 0.2s',
-          zIndex: 1000
+          zIndex: 1000,
         },
         bar: {
           height: '100%',
           background: color.heading,
-          transition: 'all 0.3s ease-out'
-        }
+          transition: 'all 0.3s ease-out',
+        },
       },
       number: {
         container: {
@@ -258,10 +263,10 @@ const screen = (name, custom={}) => {
           bottom: 10,
           right: 10,
           zIndex: 1000,
-          color: color.heading
-        }
-      }
-    }
+          color: color.heading,
+        },
+      },
+    },
   };
 
   return deepAssign({}, theme, custom);

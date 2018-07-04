@@ -1,14 +1,14 @@
 import './normalize.css';
 import './index.css';
-import screen from './screen';
 import print from 'spectacle/lib/themes/default/print';
+import screen from './screen';
 
 /**
  * Create the theme.
  */
 const createTheme = (name, custom) => ({
   screen: screen(name, custom),
-  print: print()
+  print: print(),
 });
 
 export default createTheme;
