@@ -1,5 +1,5 @@
 import React from 'react';
-import { Appear, List, Fill, ListItem, Text, Image, Layout, Slide, Heading, Markdown } from 'spectacle';
+import { Appear, List, Fill, ListItem, Text, Layout, Slide, Heading, Markdown } from 'spectacle';
 
 const images = {
   backround: require('../assets/js-logos.png'),
@@ -8,7 +8,7 @@ const images = {
 export default (
   <Slide
     transition={['zoom', 'slide']}
-    bgDarken={0.4}
+    bgDarken={0.6}
     bgImage={images.backround}
     bgColor="primary"
     textColor="tertiary"
@@ -17,12 +17,12 @@ export default (
     <Heading size={2} margin="-10px 0 0 0" textColor="secondary" caps>
       Shouts-Outs
     </Heading>
-    <Text textAlign="left" margin="0 20px 40px 0" textColor="tertiary" size={3} bold>
+    <Text textAlign="left" margin="0 20px 40px 0" textColor="tertiary" bold>
       <Markdown>
         Thank you to the teams behind `VS Code`, `Node.js`, `React.js` and `Yarn`, `HyperApp`, the `CSS Grid Spec`,
         `Parcel.js`.
       </Markdown>
-      <Markdown>Thanks to the organizers and volunteers at *PGHTechFest*.</Markdown>
+      <Markdown>Thanks to the organizers and volunteers at *PGH TechFest*.</Markdown>
       <Markdown>
         Special thanks to Wes Bos, Scott Tolinski and Una Kravets for inspiration, tutorials and references. Thank you
         to my co-workers and friends for their support.
@@ -39,16 +39,28 @@ export default (
       <Fill>
         <Appear>
           <List>
-            <ListItem>Wes Bos & CSSGrid.io                        </ListItem>
-            <ListItem>Scott Tolinski & LevelUp Tuts                        </ListItem>
+            <ListItem>
+Wes Bos & CSSGrid.io
+{' '}
+</ListItem>
+            <ListItem>
+Scott Tolinski & LevelUp Tuts
+{' '}
+</ListItem>
           </List>
         </Appear>
       </Fill>
       <Fill>
         <Appear>
           <List>
-            <ListItem>https://hyperstart.io/                        </ListItem>
-            <ListItem>VS Code, Prettier, NPX                        </ListItem>
+            <ListItem>
+https://hyperstart.io/
+{' '}
+</ListItem>
+            <ListItem>
+VS Code, Prettier, NPX
+{' '}
+</ListItem>
           </List>
         </Appear>
       </Fill>

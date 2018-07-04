@@ -29,7 +29,7 @@ ul .appear {
   display: inline;
 }
 
-.spectacle-s lide {
+.spectacle-slide {
   -webkit-transform-origin: center center;
   transform-origin: center center;
 }
