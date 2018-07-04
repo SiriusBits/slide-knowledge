@@ -6148,7 +6148,7 @@ prismjs@1.6.0:
   optionalDependencies:
     clipboard "^1.5.5"
 
-prismjs@^1.5.1, prismjs@^1.6.0:
+prismjs@^1.6.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.14.0.tgz#bbccfdb8be5d850d26453933cb50122ca0362ae0"
   optionalDependencies:
@@ -7203,17 +7203,6 @@ spectacle-terminal@^0.5.0:
     prop-types "^15.6.0"
     react "^15.4.1"
     react-dom "^15.4.1"
-
-spectacle-theme-nova@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/spectacle-theme-nova/-/spectacle-theme-nova-1.4.1.tgz#8cd4476e27a036600d2e76b637d74237648d7b97"
-  dependencies:
-    deep-assign "2.0.0"
-    hex-rgb "1.0.0"
-    normalize.css "5.0.0"
-    nova-colors "2.1.5"
-  optionalDependencies:
-    prismjs "^1.5.1"
 
 spectacle@^4.0.0:
   version "4.2.2"
